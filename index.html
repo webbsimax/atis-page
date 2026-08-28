@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Latest ATIS</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f7f9; color: #333; margin:0; padding:20px; }
+        h1 { text-align:center; color:#1a73e8; margin-bottom:30px; }
+        table { border-collapse: collapse; width: 90%; margin:0 auto 40px auto; box-shadow:0 2px 8px rgba(0,0,0,0.1); background:#fff; }
+        th, td { border:1px solid #ddd; padding:12px; vertical-align:top; }
+        th { background:#1a73e8; color:#fff; text-align:left; }
+        tr:nth-child(even) { background:#f9f9f9; }
+        pre { margin:0; font-family:monospace; white-space:pre-wrap; }
+        .old-atis { background-color:#ffe5e5; }
+        footer { text-align:center; font-size:0.9em; color:#666; margin-top:40px; }
+    </style>
+</head>
+<body>
+    <h1>Latest ATIS by Airport</h1>
+    <table>
+        <tr>
+            <th>Airport</th>
+            <th>Datetime (UTC)</th>
+            <th>ATIS</th>
+        </tr>
+        <tr>
+            <td>YBBN</td>
+            <td>2026-08-28 11:02:18</td>
+            <td><pre>    ATIS YBBN E   281053
+       APCH: EXP INST APCH
+    + RWY: 19L
+    + OPR INFO: 
+       WND: 110/5,  MAX TW 2.
+       WX: CAVOK
+       TMP: 18
+       QNH: 1026</pre></td>
+        </tr>
+        <tr class="old-atis">
+            <td>YMAV</td>
+            <td>2026-08-28 10:17:24</td>
+            <td><pre>    ATIS YMAV R   281002
+      APCH: EXPECT INSTRUMENT APCH
+      RWY: 18
+    + SFC COND:
+      WIND: CALM
+      VIS: 10KM
+      CLD: SCT018 BKN026
+      TMP: 11
+    + QNH: 1031</pre></td>
+        </tr>
+        <tr>
+            <td>YMEN</td>
+            <td>2026-08-28 11:16:30</td>
+            <td><pre>    ATIS YMEN L   281113
+      APCH: EXP INSTR APCH
+      RWY: 26 FOR ARRS. RWY 17 FOR DEPS
+      SFC COND: RWYS 26 AND 17, SURFACE CONDITION CODE 5,5,5, WHOLE
+                RWY WET
+      OPR INFO: ABN UNSERVICEABLE AS PER NOTAM
+      WIND: LV
+      VIS: GT 10KM
+    + WX: MIST
+      CLD: SCT012 SCT020
+      TMP: 11
+      QNH: 1031</pre></td>
+        </tr>
+        <tr>
+            <td>YMML</td>
+            <td>2026-08-28 11:16:28</td>
+            <td><pre>    ATIS YMML U   281109
+       APCH: EXP GLS OR ILS APCH
+       RWY: 16 FOR ARR. RWY 27 FOR DEP
+       SFC COND: RWY 16 SFC COND CODE 5, 5, 5. WHOLE RWY WET.
+    RWY 27 SFC COND CODE 5, 5, 5. WHOLE RWY WET.
+       WND: VRB 6 KTS, MAX TW 6 KTS ALL RUNWAYS 
+       VIS: GREATER THAN 10 KM 
+       WX: MIFG PATCHES
+    + CLD: FEW010 FEW030
+    + TMP: 9
+       QNH: 1031</pre></td>
+        </tr>
+        <tr>
+            <td>YPAD</td>
+            <td>2026-08-28 10:31:43</td>
+            <td><pre>    ATIS YPAD A   281028
+       RWY: 23 AND 12 FOR ARR. RWY 23 FOR DEP
+    + WND: 110/4. 
+    MAX TW 3 RWY 23
+       WX: CAVOK
+       TMP: 13
+    + QNH: 1031</pre></td>
+        </tr>
+        <tr>
+            <td>YPPH</td>
+            <td>2026-08-28 10:31:41</td>
+            <td><pre>    ATIS YPPH Y   281026
+       APCH: EXP ILS APCH
+       RWY: 21
+       WND: 120/10
+       WX: CAVOK
+    + TMP: 15
+    + QNH: 1028</pre></td>
+        </tr>
+        <tr class="old-atis">
+            <td>YSSY</td>
+            <td>2026-08-28 10:03:02</td>
+            <td><pre>    ATIS YSSY E   280950
+      APCH: EXPECT INSTR APCH THEN INDEPENDENT VISUAL APCH WHEN
+            VISUAL. DO NOT PASS THROUGH ASSIGNED RWY CENTRE LINE
+      RWY: 16L AND R FOR ARRS AND DEPS
+      OPR INFO: INDEPENDENT PARL DEPARTURES IN PROGRESS
+    + WIND: 130/12
+      VIS: GT 10KM
+      CLD: FEW020
+      TMP: 16
+    + QNH: 1028</pre></td>
+        </tr>
+        <tr class="old-atis">
+            <td>YSWS</td>
+            <td>2026-08-28 08:03:21</td>
+            <td><pre>    ATIS YSWS H  280652.
+    OPR INFO: CONTINGENCY AD CONTROL SER ON ALL FREQUENCIES ARE NOT AVBL
+    MANDATORY BROADCAST PROC APPLY ON THE MANOEUVRING AREA ON 128 DECIMAL
+    1 CTC PLUS 61 29556 6853 FOR PILOT BRIEFING AND 118 DECIMAL 4 FOR
+    AIRWAYS CLR REFER TO NO TAM B 30 26., PRIOR TO ENTERING RWY: FOR DEP
+    PILOTS MUST REP READY ON 118 DECIMAL 4 AND OBTAIN DEP INSTRUCTIONS
+    HIGH INTST RWY AND APCH LGT ON STAGE 4 FM THE THIRTY FIRST AUGUST 02
+    30 AD CONTROL SERVICES WILL BE AVBL.                                 NOTAM INFORMATION
+                                -----------------</pre></td>
+        </tr>
+    </table>
+    <footer>
+        Updated dynamically from ATIS Log &copy; 2026
+    </footer>
+</body>
+</html>
