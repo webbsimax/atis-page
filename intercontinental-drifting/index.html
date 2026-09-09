@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intercontinental Drifting</title>
+<style>
+:root {
+  --bg: #faf8f5;
+  --fg: #2b2b2b;
+  --muted: #6b6b6b;
+  --accent: #a4553a;
+  --card: #ffffff;
+  --border: #e7e1d8;
+  --maxw: 780px;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.65;
+}
+header.site {
+  text-align: center;
+  padding: 3rem 1.5rem 2rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--card);
+}
+header.site h1 {
+  font-size: 2.2rem;
+  margin: 0 0 0.4rem;
+  letter-spacing: 0.02em;
+}
+header.site p { color: var(--muted); margin: 0; font-style: italic; }
+nav.crumb {
+  max-width: var(--maxw);
+  margin: 1.5rem auto 0;
+  padding: 0 1.5rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.85rem;
+}
+nav.crumb a { color: var(--accent); text-decoration: none; }
+nav.crumb a:hover { text-decoration: underline; }
+main { max-width: var(--maxw); margin: 0 auto; padding: 1.5rem; }
+.article-list { display: flex; flex-direction: column; gap: 1.75rem; margin-top: 1rem; }
+.article-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  gap: 1rem;
+}
+.article-card .thumb { width: 160px; min-width: 160px; height: 120px; object-fit: cover; background: #eee; }
+.article-card .thumb.placeholder {
+  display: flex; align-items: center; justify-content: center;
+  color: #bbb; font-family: Helvetica, Arial, sans-serif; font-size: 0.75rem;
+}
+.article-card .body { padding: 1rem 1.2rem 1rem 0; }
+.article-card h2 { margin: 0 0 0.25rem; font-size: 1.25rem; }
+.article-card h2 a { color: var(--fg); text-decoration: none; }
+.article-card h2 a:hover { color: var(--accent); }
+.date { font-family: Helvetica, Arial, sans-serif; font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.excerpt { color: #444; margin: 0.5rem 0 0; font-size: 0.95rem; }
+article.post h1 { font-size: 1.9rem; margin-bottom: 0.2rem; }
+article.post .date { display: block; margin-bottom: 1.5rem; }
+article.post .content p { margin: 0 0 1.1rem; }
+article.post .content h3 { margin-top: 1.8rem; }
+article.post .content a { color: var(--accent); }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.6rem;
+  margin: 2rem 0;
+}
+.gallery a { display: block; }
+.gallery img { width: 100%; height: 140px; object-fit: cover; border-radius: 6px; border: 1px solid var(--border); }
+.gallery .missing {
+  width: 100%; height: 140px; border-radius: 6px; border: 1px dashed var(--border);
+  display: flex; align-items: center; justify-content: center;
+  color: #bbb; font-family: Helvetica, Arial, sans-serif; font-size: 0.7rem; text-align: center; padding: 0.5rem;
+}
+.pager { display: flex; justify-content: space-between; margin: 2.5rem 0 1rem; font-family: Helvetica, Arial, sans-serif; font-size: 0.9rem; }
+.pager a { color: var(--accent); text-decoration: none; }
+footer.site { text-align: center; padding: 2rem; color: var(--muted); font-family: Helvetica, Arial, sans-serif; font-size: 0.8rem; }
+</style>
+</head>
+<body>
+<header class="site"><h1>Intercontinental Drifting</h1><p>A travel blog, recovered from backup</p></header>
+<main>
+<div class="article-list">
+<div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Dec 2016</span>
+    <h2><a href="articles/dubai-united-arab-emirates.html">Dubai, United Arab Emirates</a></h2>
+  </div>
+</div><div class="article-card">
+  <img class="thumb" src="images/2016/12/P1070900.jpg" loading="lazy" alt="">
+  <div class="body">
+    <span class="date">Dec 2016</span>
+    <h2><a href="articles/greece.html">Greece</a></h2>
+  </div>
+</div><div class="article-card">
+  <img class="thumb" src="images/2016/12/P1070578.jpg" loading="lazy" alt="">
+  <div class="body">
+    <span class="date">Dec 2016</span>
+    <h2><a href="articles/italy.html">Italy</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Dec 2016</span>
+    <h2><a href="articles/slovenia.html">Slovenia</a></h2>
+  </div>
+</div><div class="article-card">
+  <img class="thumb" src="images/2016/12/P1070152.jpg" loading="lazy" alt="">
+  <div class="body">
+    <span class="date">Dec 2016</span>
+    <h2><a href="articles/krakow-poland-and-vienna-austria.html">Kraków, Poland and Vienna, Austria</a></h2>
+  </div>
+</div><div class="article-card">
+  <img class="thumb" src="images/2016/11/P1000952.jpg" loading="lazy" alt="">
+  <div class="body">
+    <span class="date">Nov 2016</span>
+    <h2><a href="articles/munich-germany-and-prague-czech-republic.html">Munich, Germany and Prague, Czech Republic</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Nov 2016</span>
+    <h2><a href="articles/the-alps-switzerland-and-austria.html">The Alps, Switzerland and Austria</a></h2>
+  </div>
+</div><div class="article-card">
+  <img class="thumb" src="images/2016/11/P1060798.jpg" loading="lazy" alt="">
+  <div class="body">
+    <span class="date">Nov 2016</span>
+    <h2><a href="articles/southern-germany.html">Southern Germany</a></h2>
+  </div>
+</div><div class="article-card">
+  <img class="thumb" src="images/2016/11/P1060745.jpg" loading="lazy" alt="">
+  <div class="body">
+    <span class="date">Nov 2016</span>
+    <h2><a href="articles/the-netherlands.html">Netherlands</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Nov 2016</span>
+    <h2><a href="articles/berlin-germany.html">Berlin, Germany</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Oct 2016</span>
+    <h2><a href="articles/sweden.html">Sweden</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Oct 2016</span>
+    <h2><a href="articles/norway.html">Norway</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Oct 2016</span>
+    <h2><a href="articles/ireland.html">Ireland</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Oct 2016</span>
+    <h2><a href="articles/scotland.html">Scotland</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Sep 2016</span>
+    <h2><a href="articles/england.html">England</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Sep 2016</span>
+    <h2><a href="articles/iceland.html">Iceland</a></h2>
+  </div>
+</div><div class="article-card">
+  <img class="thumb" src="images/2016/09/image-5.jpeg" loading="lazy" alt="">
+  <div class="body">
+    <span class="date">Sep 2016</span>
+    <h2><a href="articles/washington-dc-and-new-york-usa.html">Washington DC and New York, USA</a></h2>
+  </div>
+</div><div class="article-card">
+  <img class="thumb" src="images/2016/08/image-5.jpeg" loading="lazy" alt="">
+  <div class="body">
+    <span class="date">Aug 2016</span>
+    <h2><a href="articles/canada.html">Canada</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Aug 2016</span>
+    <h2><a href="articles/california-usa-part-ii.html">California, USA part II</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Aug 2016</span>
+    <h2><a href="articles/california-usa-part-i.html">California, USA part I</a></h2>
+  </div>
+</div><div class="article-card">
+  <img class="thumb" src="images/2016/07/image-21.jpeg" loading="lazy" alt="">
+  <div class="body">
+    <span class="date">Jul 2016</span>
+    <h2><a href="articles/texas-usa.html">Texas, USA</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Jul 2016</span>
+    <h2><a href="articles/mexico-city-mexico.html">Mexico City, Mexico</a></h2>
+  </div>
+</div><div class="article-card">
+  <img class="thumb" src="images/2016/07/image-9.jpeg" loading="lazy" alt="">
+  <div class="body">
+    <span class="date">Jul 2016</span>
+    <h2><a href="articles/havana-cuba.html">Havana, Cuba</a></h2>
+  </div>
+</div><div class="article-card">
+  <img class="thumb" src="images/2016/07/image-4.jpeg" loading="lazy" alt="">
+  <div class="body">
+    <span class="date">Jul 2016</span>
+    <h2><a href="articles/yucatan-mexico.html">Yucatan, Mexico</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Jun 2016</span>
+    <h2><a href="articles/guatemala.html">Guatemala</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Jun 2016</span>
+    <h2><a href="articles/nicaragua.html">Nicaragua</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Jun 2016</span>
+    <h2><a href="articles/panama-and-costa-rica.html">Panama and Costa Rica</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Jun 2016</span>
+    <h2><a href="articles/bogota-colombia.html">Bogota, Colombia</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">May 2016</span>
+    <h2><a href="articles/ecuador.html">Ecuador</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">May 2016</span>
+    <h2><a href="articles/machu-picchu-peru.html">Machu Picchu, Peru</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Apr 2016</span>
+    <h2><a href="articles/lima-and-ica-peru.html">Lima and Ica, Peru</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Apr 2016</span>
+    <h2><a href="articles/rio-de-janeiro-brazil.html">Rio de Janeiro, Brazil</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Apr 2016</span>
+    <h2><a href="articles/iguazu-falls-argentinabrazil.html">Iguazu Falls, Argentina/Brazil</a></h2>
+  </div>
+</div><div class="article-card">
+  <img class="thumb" src="images/2016/03/image-21.jpeg" loading="lazy" alt="">
+  <div class="body">
+    <span class="date">Mar 2016</span>
+    <h2><a href="articles/uruguay.html">Uruguay</a></h2>
+  </div>
+</div><div class="article-card">
+  <img class="thumb" src="images/2016/03/image-12.jpeg" loading="lazy" alt="">
+  <div class="body">
+    <span class="date">Mar 2016</span>
+    <h2><a href="articles/177.html">Buenos Aires, Argentina</a></h2>
+  </div>
+</div><div class="article-card">
+  <div class="thumb placeholder">no photo yet</div>
+  <div class="body">
+    <span class="date">Mar 2016</span>
+    <h2><a href="articles/el-mar-a-las-montanas-chile.html">Del mar a las montañas, Chile</a></h2>
+  </div>
+</div><div class="article-card">
+  <img class="thumb" src="images/2016/03/p1000364jpg_25473607646_o.jpg" loading="lazy" alt="">
+  <div class="body">
+    <span class="date">Mar 2016</span>
+    <h2><a href="articles/santiago-chile.html">Santiago, Chile</a></h2>
+  </div>
+</div><div class="article-card">
+  <img class="thumb" src="images/2016/02/11741026_10153361200881638_3075131651351149785_o.jpg" loading="lazy" alt="">
+  <div class="body">
+    <span class="date">Feb 2016</span>
+    <h2><a href="articles/welcome.html">Welcome</a></h2>
+  </div>
+</div>
+</div>
+</main>
+<footer class="site">Recovered static archive of Intercontinental Drifting &middot; originally adam-webb.com/intercontinentaldrifting</footer>
+</body>
+</html>
